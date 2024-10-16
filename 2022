@@ -1,0 +1,55 @@
+# ActiveMQ 2022
+
+- **Réalisé par** : `CISSAY Victor`
+
+---
+
+## Scan des Ports Ouverts
+
+### Outil Utilisé
+- **Outil** : Nmap
+- **Commande utilisée** : 
+  ```bash
+  nmap -sS -sV 172.18.0.2
+  ```
+
+### Résultats du Scan
+
+
+---
+
+## Version de ActiveMQ
+
+Trouvée via weak credentials sur la page /admin (admin admin)
+
+- **Version détectée** : `5.11.1`
+
+---
+
+## Vulnérabilités Connues (CVE)
+
+### CVE Détails
+| CVE ID          | Description                                                                                                                  | Lien                                                              |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| CVE-2016-3088   | Apache ActiveMQ 5.11.1/5.13.2 - Directory Traversal / Command Execution      | https://www.exploit-db.com/exploits/40857 |
+
+
+
+### Impact
+Un attaquant peut téléverser un fichier malveillant (ex: un shell JSP) dans un répertoire sensible en exploitant une faille de directory traversal.
+Cette attaque permet d’obtenir des privilèges d'administration ou d'exécuter des commandes sur le serveur.
+
+---
+
+## Scénario de Compromission
+
+### Description du Scénario
+- Un attaquant pourrait utiliser des identifiants par défaut (admin:admin) pour accéder à la page d'administration d'ActiveMQ. En exploitant la vulnérabilité CVE-2016-3088, l'attaquant pourrait envoyer une requête HTTP PUT pour télécharger un fichier JSP malveillant sur le serveur.
+
+
+---
+
+## Preuve de Compromission
+
+
+---

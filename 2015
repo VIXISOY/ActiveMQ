@@ -1,0 +1,81 @@
+# ActiveMQ 2015
+
+- **Réalisé par** : `CISSAY Victor`
+
+---
+
+## Scan des Ports Ouverts
+
+### Outil Utilisé
+- **Outil** : Nmap
+- **Commande utilisée** : 
+  ```bash
+  nmap -sS -sV 172.18.0.2
+  ```
+
+### Résultats du Scan
+
+
+
+---
+
+## Version de ActiveMQ
+
+- **Version détectée** : `5.x.x`
+- **Date de publication** : `YYYY-MM-DD`
+
+---
+
+## Vulnérabilités Connues (CVE)
+
+### CVE Détails
+| CVE ID          | Description | Lien |
+|-----------------|-------------|------|
+| CVE-XXXX-YYYY   | Description de la vulnérabilité | [Lien CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-XXXX-YYYY) |
+| CVE-XXXX-ZZZZ   | Description de la vulnérabilité | [Lien CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-XXXX-ZZZZ) |
+
+### Impact
+- Explique comment ces vulnérabilités peuvent être exploitées et quel impact elles pourraient avoir.
+
+---
+
+## Scénario de Compromission
+
+### Description du Scénario
+- Décris un scénario où un attaquant pourrait compromettre le système en utilisant les vulnérabilités identifiées. Par exemple :
+  - Utilisation d’un message malveillant pour exploiter une vulnérabilité d'exécution de code à distance.
+  - Manipulation des queues de messages pour accéder à des données sensibles.
+
+### Étapes de l'Attaque
+1. Étape 1 : [Décrire]
+2. Étape 2 : [Décrire]
+3. Étape 3 : [Décrire]
+
+---
+
+## Preuve de Compromission
+
+### Indicateurs de Compromission
+- Logs suspects ou comportements anormaux observés (ex. messages non autorisés, accès à des queues protégées).
+- Exemples de données récupérées ou d'actions effectuées après la compromission.
+
+### Screenshots / Exemples
+- Ajoute ici des captures d'écran ou des extraits de logs pour illustrer ta preuve de compromission.
+
+---
+
+## Conclusion
+
+- Résumé des findings et recommandations pour améliorer la sécurité d'ActiveMQ.
+- Suggestions pour patcher ou configurer correctement le système afin de se protéger contre les vulnérabilités identifiées.
+
+---
+
+## Références
+
+- [Documentation ActiveMQ](http://activemq.apache.org/documentation.html)
+- [NVD](https://nvd.nist.gov/)
+- [CVE Details](https://www.cvedetails.com/)
+
+
+![image](https://github.com/user-attachments/assets/496f6e2b-75ff-4e20-a4b1-9256dddc4a33)
